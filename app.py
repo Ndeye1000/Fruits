@@ -15,9 +15,9 @@ class Fruit:
     def __str__(self):
         return f"Vous avez acheté {self.quantite} {self.nom}s."
     
-fraise = Fruit("fraise", 10, 250)
-banane = Fruit("banane", 5, 200)
-ananas = Fruit("ananas", 100, 500)
+fraise = Fruit("fraise 🍓", 10, 250)
+banane = Fruit("banane 🍌", 5, 200)
+ananas = Fruit("ananas 🍍", 100, 500)
 
 @app.route("/")
 def accueil():

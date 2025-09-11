@@ -1,0 +1,58 @@
+/* Fond général pastel et doux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a8edea, #fed6e3); /* dégradé pastel */
+    margin: 0;
+    padding: 0;
+}
+
+/* Titre doux et centré */
+h1 {
+    text-align: center;
+    color: #2b7a78; /* bleu/vert rafraîchissant */
+    margin-top: 40px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Liste en grille */
+ul {
+    list-style: none; /* supprime les puces */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Cartes de fruits */
+li {
+    background-color: #ffffffcc; /* blanc translucide */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover doux */
+li:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Prix stylé */
+li strong {
+    color: #3fb0ac; /* vert/bleu rafraîchissant */
+    font-size: 1.2rem;
+}
+
+/* Ajouter un petit effet “emoji fruit” pour plus de fun */
+li::before {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
