@@ -26,7 +26,7 @@ class Fruit(Base):
     
 
 
-# Connexion à une base SQLite (fichier users.db)
+# Connexion à une base SQLite (fichier fruits.db)
 engine = create_engine("sqlite:///fruits.db")
 
 # Crée les tables dans la base
@@ -48,7 +48,7 @@ session.commit()
 
 @app.route("/")
 def accueil():
-    # Lire tous les utilisateurs
+    # Lire tous les fruits
     fruits = session.query(Fruit).all()
     return render_template("index.html",fruits=fruits)
 
